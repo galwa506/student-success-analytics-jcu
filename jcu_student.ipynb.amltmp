@@ -25,7 +25,7 @@
       "execution_count": 1,
       "metadata": {
         "gather": {
-          "logged": 1753670202304
+          "logged": 1753771792226
         }
       }
     },
@@ -46,7 +46,7 @@
       "cell_type": "code",
       "source": [
         "# Load dataset\n",
-        "df = pd.read_excel('student_data.xlsx')\n",
+        "df = pd.read_excel('student_data_2.xlsx')\n",
         "\n",
         "# Show all columns when displaying DataFrames\n",
         "pd.set_option('display.max_columns', None)\n",
@@ -57,7 +57,7 @@
           "output_type": "execute_result",
           "execution_count": 2,
           "data": {
-            "text/plain": "   student_id                             course student_cohort  \\\n0           1  Master of Business Administration    SRI to JCUB   \n1           2  Master of Business Administration     Continuing   \n2           3  Master of Business Administration     First year   \n3           4  Master of Business Administration            New   \n4           5  Master of Business Administration     Continuing   \n\n  academic_status  failed_subjects        study_skills(attended)  \\\n0         At Risk              NaN              Essential Skills   \n1        Excluded              NaN                   Referencing   \n2         At Risk              NaN                       Writing   \n3        Excluded              NaN              Essential Skills   \n4         At Risk              NaN  Essential Skills and Reading   \n\n             referral    pp_meeting self_assessment  \\\n0  Student Counsellor        Booked             Yes   \n1    Student Advocate  Not relevant             Yes   \n2          Enrollment      Attended             Yes   \n3    Student Advocate      Attended              No   \n4  Student Counsellor  Not relevant              No   \n\n  readiness_assessment_results follow_up follow_up_type  subject_1  \\\n0       L/G:9/10 N:5/10 R:8/10       Yes       No Reply        NaN   \n1       L/G:9/10 N:5/10 R:8/10        No          Phone        NaN   \n2       L/G:9/10 N:5/10 R:8/10       Yes          Phone        NaN   \n3       L/G:9/10 N:5/10 R:8/10        No            F2F        NaN   \n4       L/G:9/10 N:5/10 R:8/10       Yes       No Reply        NaN   \n\n   subject_1_assess_1  subject_1_assess_2  subject_1_assess_3  \\\n0                7.70               27.22               26.51   \n1               31.14               54.66               81.72   \n2               39.09               75.39               84.62   \n3               88.59               84.36                3.79   \n4                0.98               13.80               53.40   \n\n   subject_1_assess_4  attendance_1 learn_jcu_issues_1  lecturer_referral_1  \\\n0               50.09            20             Access  Concern for Welfare   \n1                1.96             9             Access       Non Submission   \n2               82.66            51          No Access           Attendance   \n3               26.05            34             Access  Concern for Welfare   \n4               39.69            45             Access           Attendance   \n\n   subject_2  subject_2_assess_1  subject_2_assess_2  subject_2_assess_3  \\\n0        NaN               69.33               44.44               11.39   \n1        NaN               95.23               48.61               14.68   \n2        NaN               86.20               98.80               71.57   \n3        NaN                7.69               25.96               49.83   \n4        NaN               60.51               57.47               15.80   \n\n   subject_2_assess_4  attendance_2 learn_jcu_issues_2  lecturer_referral_2  \\\n0               18.78            41             Access           Attendance   \n1               44.77            66          No Access  Concern for Welfare   \n2               96.08            64          No Access  Concern for Welfare   \n3               17.77            57             Access       Non Submission   \n4               33.59             3          No Access  Concern for Welfare   \n\n   subject_3  subject_3_assess_1  subject_3_assess_2  subject_3_assess_3  \\\n0        NaN               39.02               17.71               94.50   \n1        NaN                3.72               38.52               25.80   \n2        NaN               77.77               77.27               81.95   \n3        NaN               95.41                8.93                3.21   \n4        NaN               90.12               52.18               36.05   \n\n   subject_4_assess_4  attendance_3 learn_jcu_issues_3  lecturer_referral_3  \\\n0                9.83            89             Access       Non Submission   \n1               11.80           100          No Access       Non Submission   \n2               62.35            42             Access           Attendance   \n3               99.15            51             Access  Concern for Welfare   \n4               20.65            19             Access  Concern for Welfare   \n\n                                            comments     identified_issues  \n0  Week 8. Student re-engaged with tutorials. Sub...       Late Enrollment  \n1  booked to see a doctor. Week 5. Student contac...  Poor time management  \n2  Week 8. Student re-engaged with tutorials. Sub...  Poor time management  \n3  Week 6. Student submitted assessment late. Ext...       Death in family  \n4  Week 3 late enrolment. Student finding it diff...              Sickness  ",
+            "text/plain": "   student_id                             course student_cohort  \\\n0           1  Master of Business Administration    SRI to JCUB   \n1           2  Master of Business Administration     Continuing   \n2           3  Master of Business Administration     First year   \n3           4  Master of Business Administration            New   \n4           5  Master of Business Administration     Continuing   \n\n  academic_status failed_subjects        study_skills(attended)  \\\n0         At Risk             NaN              Essential Skills   \n1        Excluded             NaN                   Referencing   \n2         At Risk             NaN                       Writing   \n3        Excluded             NaN              Essential Skills   \n4         At Risk             NaN  Essential Skills and Reading   \n\n             referral    pp_meeting self_assessment  \\\n0  Student Counsellor        Booked             Yes   \n1    Student Advocate  Not relevant             Yes   \n2          Enrollment      Attended             Yes   \n3    Student Advocate      Attended              No   \n4  Student Counsellor  Not relevant              No   \n\n  readiness_assessment_results follow_up follow_up_type  subject_1  \\\n0       L/G:9/10 N:5/10 R:8/10       Yes       No Reply        NaN   \n1       L/G:9/10 N:5/10 R:8/10        No          Phone        NaN   \n2       L/G:9/10 N:5/10 R:8/10       Yes          Phone        NaN   \n3       L/G:9/10 N:5/10 R:8/10        No            F2F        NaN   \n4       L/G:9/10 N:5/10 R:8/10       Yes       No Reply        NaN   \n\n   subject_1_assess_1  subject_1_assess_2  subject_1_assess_3  \\\n0                7.70               27.22               26.51   \n1               31.14               54.66               81.72   \n2               39.09               75.39               84.62   \n3               88.59               84.36                3.79   \n4                0.98               13.80               53.40   \n\n   subject_1_assess_4  attendance_1 learn_jcu_issues_1  lecturer_referral_1  \\\n0               50.09            20             Access  Concern for Welfare   \n1                1.96             9             Access       Non Submission   \n2               82.66            51          No Access           Attendance   \n3               26.05            34             Access  Concern for Welfare   \n4               39.69            45             Access           Attendance   \n\n   subject_2  subject_2_assess_1  subject_2_assess_2  subject_2_assess_3  \\\n0        NaN               69.33               44.44               11.39   \n1        NaN               95.23               48.61               14.68   \n2        NaN               86.20               98.80               71.57   \n3        NaN                7.69               25.96               49.83   \n4        NaN               60.51               57.47               15.80   \n\n   subject_2_assess_4  attendance_2 learn_jcu_issues_2  lecturer_referral_2  \\\n0               18.78            41             Access           Attendance   \n1               44.77            66          No Access  Concern for Welfare   \n2               96.08            64          No Access  Concern for Welfare   \n3               17.77            57             Access       Non Submission   \n4               33.59             3          No Access  Concern for Welfare   \n\n   subject_3  subject_3_assess_1  subject_3_assess_2  subject_3_assess_3  \\\n0        NaN               39.02               17.71               94.50   \n1        NaN                3.72               38.52               25.80   \n2        NaN               77.77               77.27               81.95   \n3        NaN               95.41                8.93                3.21   \n4        NaN               90.12               52.18               36.05   \n\n   subject_4_assess_4  attendance_3 learn_jcu_issues_3  lecturer_referral_3  \\\n0                9.83            89             Access       Non Submission   \n1               11.80           100          No Access       Non Submission   \n2               62.35            42             Access           Attendance   \n3               99.15            51             Access  Concern for Welfare   \n4               20.65            19             Access  Concern for Welfare   \n\n                                            comments     identified_issues  \n0  Week 8. Student re-engaged with tutorials. Sub...       Late Enrollment  \n1  booked to see a doctor. Week 5. Student contac...  Poor time management  \n2  Week 8. Student re-engaged with tutorials. Sub...  Poor time management  \n3  Week 6. Student submitted assessment late. Ext...       Death in family  \n4  Week 3 late enrolment. Student finding it diff...              Sickness  ",
             "text/html": "<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>student_id</th>\n      <th>course</th>\n      <th>student_cohort</th>\n      <th>academic_status</th>\n      <th>failed_subjects</th>\n      <th>study_skills(attended)</th>\n      <th>referral</th>\n      <th>pp_meeting</th>\n      <th>self_assessment</th>\n      <th>readiness_assessment_results</th>\n      <th>follow_up</th>\n      <th>follow_up_type</th>\n      <th>subject_1</th>\n      <th>subject_1_assess_1</th>\n      <th>subject_1_assess_2</th>\n      <th>subject_1_assess_3</th>\n      <th>subject_1_assess_4</th>\n      <th>attendance_1</th>\n      <th>learn_jcu_issues_1</th>\n      <th>lecturer_referral_1</th>\n      <th>subject_2</th>\n      <th>subject_2_assess_1</th>\n      <th>subject_2_assess_2</th>\n      <th>subject_2_assess_3</th>\n      <th>subject_2_assess_4</th>\n      <th>attendance_2</th>\n      <th>learn_jcu_issues_2</th>\n      <th>lecturer_referral_2</th>\n      <th>subject_3</th>\n      <th>subject_3_assess_1</th>\n      <th>subject_3_assess_2</th>\n      <th>subject_3_assess_3</th>\n      <th>subject_4_assess_4</th>\n      <th>attendance_3</th>\n      <th>learn_jcu_issues_3</th>\n      <th>lecturer_referral_3</th>\n      <th>comments</th>\n      <th>identified_issues</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>1</td>\n      <td>Master of Business Administration</td>\n      <td>SRI to JCUB</td>\n      <td>At Risk</td>\n      <td>NaN</td>\n      <td>Essential Skills</td>\n      <td>Student Counsellor</td>\n      <td>Booked</td>\n      <td>Yes</td>\n      <td>L/G:9/10 N:5/10 R:8/10</td>\n      <td>Yes</td>\n      <td>No Reply</td>\n      <td>NaN</td>\n      <td>7.70</td>\n      <td>27.22</td>\n      <td>26.51</td>\n      <td>50.09</td>\n      <td>20</td>\n      <td>Access</td>\n      <td>Concern for Welfare</td>\n      <td>NaN</td>\n      <td>69.33</td>\n      <td>44.44</td>\n      <td>11.39</td>\n      <td>18.78</td>\n      <td>41</td>\n      <td>Access</td>\n      <td>Attendance</td>\n      <td>NaN</td>\n      <td>39.02</td>\n      <td>17.71</td>\n      <td>94.50</td>\n      <td>9.83</td>\n      <td>89</td>\n      <td>Access</td>\n      <td>Non Submission</td>\n      <td>Week 8. Student re-engaged with tutorials. Sub...</td>\n      <td>Late Enrollment</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>2</td>\n      <td>Master of Business Administration</td>\n      <td>Continuing</td>\n      <td>Excluded</td>\n      <td>NaN</td>\n      <td>Referencing</td>\n      <td>Student Advocate</td>\n      <td>Not relevant</td>\n      <td>Yes</td>\n      <td>L/G:9/10 N:5/10 R:8/10</td>\n      <td>No</td>\n      <td>Phone</td>\n      <td>NaN</td>\n      <td>31.14</td>\n      <td>54.66</td>\n      <td>81.72</td>\n      <td>1.96</td>\n      <td>9</td>\n      <td>Access</td>\n      <td>Non Submission</td>\n      <td>NaN</td>\n      <td>95.23</td>\n      <td>48.61</td>\n      <td>14.68</td>\n      <td>44.77</td>\n      <td>66</td>\n      <td>No Access</td>\n      <td>Concern for Welfare</td>\n      <td>NaN</td>\n      <td>3.72</td>\n      <td>38.52</td>\n      <td>25.80</td>\n      <td>11.80</td>\n      <td>100</td>\n      <td>No Access</td>\n      <td>Non Submission</td>\n      <td>booked to see a doctor. Week 5. Student contac...</td>\n      <td>Poor time management</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>3</td>\n      <td>Master of Business Administration</td>\n      <td>First year</td>\n      <td>At Risk</td>\n      <td>NaN</td>\n      <td>Writing</td>\n      <td>Enrollment</td>\n      <td>Attended</td>\n      <td>Yes</td>\n      <td>L/G:9/10 N:5/10 R:8/10</td>\n      <td>Yes</td>\n      <td>Phone</td>\n      <td>NaN</td>\n      <td>39.09</td>\n      <td>75.39</td>\n      <td>84.62</td>\n      <td>82.66</td>\n      <td>51</td>\n      <td>No Access</td>\n      <td>Attendance</td>\n      <td>NaN</td>\n      <td>86.20</td>\n      <td>98.80</td>\n      <td>71.57</td>\n      <td>96.08</td>\n      <td>64</td>\n      <td>No Access</td>\n      <td>Concern for Welfare</td>\n      <td>NaN</td>\n      <td>77.77</td>\n      <td>77.27</td>\n      <td>81.95</td>\n      <td>62.35</td>\n      <td>42</td>\n      <td>Access</td>\n      <td>Attendance</td>\n      <td>Week 8. Student re-engaged with tutorials. Sub...</td>\n      <td>Poor time management</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>4</td>\n      <td>Master of Business Administration</td>\n      <td>New</td>\n      <td>Excluded</td>\n      <td>NaN</td>\n      <td>Essential Skills</td>\n      <td>Student Advocate</td>\n      <td>Attended</td>\n      <td>No</td>\n      <td>L/G:9/10 N:5/10 R:8/10</td>\n      <td>No</td>\n      <td>F2F</td>\n      <td>NaN</td>\n      <td>88.59</td>\n      <td>84.36</td>\n      <td>3.79</td>\n      <td>26.05</td>\n      <td>34</td>\n      <td>Access</td>\n      <td>Concern for Welfare</td>\n      <td>NaN</td>\n      <td>7.69</td>\n      <td>25.96</td>\n      <td>49.83</td>\n      <td>17.77</td>\n      <td>57</td>\n      <td>Access</td>\n      <td>Non Submission</td>\n      <td>NaN</td>\n      <td>95.41</td>\n      <td>8.93</td>\n      <td>3.21</td>\n      <td>99.15</td>\n      <td>51</td>\n      <td>Access</td>\n      <td>Concern for Welfare</td>\n      <td>Week 6. Student submitted assessment late. Ext...</td>\n      <td>Death in family</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>5</td>\n      <td>Master of Business Administration</td>\n      <td>Continuing</td>\n      <td>At Risk</td>\n      <td>NaN</td>\n      <td>Essential Skills and Reading</td>\n      <td>Student Counsellor</td>\n      <td>Not relevant</td>\n      <td>No</td>\n      <td>L/G:9/10 N:5/10 R:8/10</td>\n      <td>Yes</td>\n      <td>No Reply</td>\n      <td>NaN</td>\n      <td>0.98</td>\n      <td>13.80</td>\n      <td>53.40</td>\n      <td>39.69</td>\n      <td>45</td>\n      <td>Access</td>\n      <td>Attendance</td>\n      <td>NaN</td>\n      <td>60.51</td>\n      <td>57.47</td>\n      <td>15.80</td>\n      <td>33.59</td>\n      <td>3</td>\n      <td>No Access</td>\n      <td>Concern for Welfare</td>\n      <td>NaN</td>\n      <td>90.12</td>\n      <td>52.18</td>\n      <td>36.05</td>\n      <td>20.65</td>\n      <td>19</td>\n      <td>Access</td>\n      <td>Concern for Welfare</td>\n      <td>Week 3 late enrolment. Student finding it diff...</td>\n      <td>Sickness</td>\n    </tr>\n  </tbody>\n</table>\n</div>"
           },
           "metadata": {}
@@ -66,7 +66,7 @@
       "execution_count": 2,
       "metadata": {
         "gather": {
-          "logged": 1753670202912
+          "logged": 1753771792818
         }
       }
     },
@@ -93,13 +93,13 @@
         {
           "output_type": "stream",
           "name": "stdout",
-          "text": "<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 698 entries, 0 to 697\nData columns (total 38 columns):\n #   Column                        Non-Null Count  Dtype  \n---  ------                        --------------  -----  \n 0   student_id                    698 non-null    int64  \n 1   course                        698 non-null    object \n 2   student_cohort                698 non-null    object \n 3   academic_status               698 non-null    object \n 4   failed_subjects               0 non-null      float64\n 5   study_skills(attended)        698 non-null    object \n 6   referral                      698 non-null    object \n 7   pp_meeting                    698 non-null    object \n 8   self_assessment               698 non-null    object \n 9   readiness_assessment_results  698 non-null    object \n 10  follow_up                     698 non-null    object \n 11  follow_up_type                698 non-null    object \n 12  subject_1                     0 non-null      float64\n 13  subject_1_assess_1            698 non-null    float64\n 14  subject_1_assess_2            698 non-null    float64\n 15  subject_1_assess_3            698 non-null    float64\n 16  subject_1_assess_4            698 non-null    float64\n 17  attendance_1                  698 non-null    int64  \n 18  learn_jcu_issues_1            698 non-null    object \n 19  lecturer_referral_1           698 non-null    object \n 20  subject_2                     0 non-null      float64\n 21  subject_2_assess_1            698 non-null    float64\n 22  subject_2_assess_2            698 non-null    float64\n 23  subject_2_assess_3            698 non-null    float64\n 24  subject_2_assess_4            698 non-null    float64\n 25  attendance_2                  698 non-null    int64  \n 26  learn_jcu_issues_2            698 non-null    object \n 27  lecturer_referral_2           698 non-null    object \n 28  subject_3                     0 non-null      float64\n 29  subject_3_assess_1            698 non-null    float64\n 30  subject_3_assess_2            698 non-null    float64\n 31  subject_3_assess_3            698 non-null    float64\n 32  subject_4_assess_4            698 non-null    float64\n 33  attendance_3                  698 non-null    int64  \n 34  learn_jcu_issues_3            698 non-null    object \n 35  lecturer_referral_3           698 non-null    object \n 36  comments                      698 non-null    object \n 37  identified_issues             698 non-null    object \ndtypes: float64(16), int64(4), object(18)\nmemory usage: 207.3+ KB\n"
+          "text": "<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 698 entries, 0 to 697\nData columns (total 38 columns):\n #   Column                        Non-Null Count  Dtype  \n---  ------                        --------------  -----  \n 0   student_id                    698 non-null    int64  \n 1   course                        698 non-null    object \n 2   student_cohort                698 non-null    object \n 3   academic_status               698 non-null    object \n 4   failed_subjects               33 non-null     object \n 5   study_skills(attended)        698 non-null    object \n 6   referral                      698 non-null    object \n 7   pp_meeting                    698 non-null    object \n 8   self_assessment               698 non-null    object \n 9   readiness_assessment_results  698 non-null    object \n 10  follow_up                     698 non-null    object \n 11  follow_up_type                698 non-null    object \n 12  subject_1                     0 non-null      float64\n 13  subject_1_assess_1            698 non-null    float64\n 14  subject_1_assess_2            698 non-null    float64\n 15  subject_1_assess_3            698 non-null    float64\n 16  subject_1_assess_4            698 non-null    float64\n 17  attendance_1                  698 non-null    int64  \n 18  learn_jcu_issues_1            698 non-null    object \n 19  lecturer_referral_1           698 non-null    object \n 20  subject_2                     0 non-null      float64\n 21  subject_2_assess_1            698 non-null    float64\n 22  subject_2_assess_2            698 non-null    float64\n 23  subject_2_assess_3            698 non-null    float64\n 24  subject_2_assess_4            698 non-null    float64\n 25  attendance_2                  698 non-null    int64  \n 26  learn_jcu_issues_2            698 non-null    object \n 27  lecturer_referral_2           698 non-null    object \n 28  subject_3                     0 non-null      float64\n 29  subject_3_assess_1            698 non-null    float64\n 30  subject_3_assess_2            698 non-null    float64\n 31  subject_3_assess_3            698 non-null    float64\n 32  subject_4_assess_4            698 non-null    float64\n 33  attendance_3                  698 non-null    int64  \n 34  learn_jcu_issues_3            698 non-null    object \n 35  lecturer_referral_3           698 non-null    object \n 36  comments                      698 non-null    object \n 37  identified_issues             698 non-null    object \ndtypes: float64(15), int64(4), object(19)\nmemory usage: 207.3+ KB\n"
         }
       ],
       "execution_count": 3,
       "metadata": {
         "gather": {
-          "logged": 1753670203003
+          "logged": 1753771792883
         }
       }
     },
@@ -123,7 +123,7 @@
       "execution_count": 4,
       "metadata": {
         "gather": {
-          "logged": 1753670203101
+          "logged": 1753771792932
         }
       }
     },
@@ -161,7 +161,7 @@
       "execution_count": 5,
       "metadata": {
         "gather": {
-          "logged": 1753670203187
+          "logged": 1753771792991
         }
       }
     },
@@ -210,7 +210,7 @@
       "execution_count": 6,
       "metadata": {
         "gather": {
-          "logged": 1753670203279
+          "logged": 1753771793037
         }
       }
     },
@@ -233,7 +233,7 @@
       "execution_count": 7,
       "metadata": {
         "gather": {
-          "logged": 1753670203374
+          "logged": 1753771793095
         }
       }
     },
@@ -263,7 +263,30 @@
       "execution_count": 8,
       "metadata": {
         "gather": {
-          "logged": 1753670203466
+          "logged": 1753771793158
+        }
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Get the course subjects from the course\n",
+        "course_subjects['Bachelor of Information Technology'] # Output: 'CP1401', 'CP1402', 'CP1404']"
+      ],
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "execution_count": 9,
+          "data": {
+            "text/plain": "['CP1401', 'CP1402', 'CP1404']"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 9,
+      "metadata": {
+        "gather": {
+          "logged": 1753771793216
         }
       }
     },
@@ -281,17 +304,17 @@
       "outputs": [
         {
           "output_type": "execute_result",
-          "execution_count": 9,
+          "execution_count": 10,
           "data": {
             "text/plain": "{'bachelor of business': ['BU1002', 'BU1003', 'BU1007'],\n 'bachelor of commerce': ['BU1112', 'BX2011', 'BX2014'],\n 'bachelor of information technology': ['CP1401', 'CP1402', 'CP1404'],\n 'bachelor of tourism, hospitality and events': ['TO1008', 'TO2117', 'TO3052'],\n 'master of business administration': ['LB5113', 'LB5202', 'LB5205'],\n 'master of data science (professional)': ['MA5831', 'MA5840', 'MA5851'],\n 'master of education - master of business administration': ['ED5097',\n  'ED5880',\n  'LB5113'],\n 'master of engineering management': ['EG5200', 'EG5220', 'EG5310'],\n 'master of information technology': ['CP5046', 'CP5047', 'CP5503'],\n 'master of information technology - master of business administration': ['CP5046',\n  'LB5113',\n  'LB5202'],\n 'master of international tourism and hospitality management': ['TO5101',\n  'TO5103',\n  'TO5104'],\n 'master of international tourism and hospitality management - master of business administration': ['TO5101',\n  'LB5113',\n  'LB5202'],\n 'master of professional accounting': ['CO5117', 'CO5103', 'CO5109'],\n 'master of professional accounting - master of business administration': ['CO5117',\n  'CO5103',\n  'LB5113'],\n 'postgraduate qualifying program - business': ['LB5202', 'LB5203', 'LB5212']}"
           },
           "metadata": {}
         }
       ],
-      "execution_count": 9,
+      "execution_count": 10,
       "metadata": {
         "gather": {
-          "logged": 1753670203545
+          "logged": 1753771793272
         }
       }
     },
@@ -308,17 +331,17 @@
       "outputs": [
         {
           "output_type": "execute_result",
-          "execution_count": 10,
+          "execution_count": 11,
           "data": {
             "text/plain": "['master of professional account and master of business administration']"
           },
           "metadata": {}
         }
       ],
-      "execution_count": 10,
+      "execution_count": 11,
       "metadata": {
         "gather": {
-          "logged": 1753670203657
+          "logged": 1753771793343
         }
       }
     },
@@ -329,10 +352,10 @@
         "df['course'].replace('master of professional account and master of business administration', 'master of professional accounting - master of business administration', inplace=True)"
       ],
       "outputs": [],
-      "execution_count": 11,
+      "execution_count": 12,
       "metadata": {
         "gather": {
-          "logged": 1753670203723
+          "logged": 1753771793395
         }
       }
     },
@@ -345,17 +368,17 @@
       "outputs": [
         {
           "output_type": "execute_result",
-          "execution_count": 12,
+          "execution_count": 13,
           "data": {
             "text/plain": "array(['master of business administration',\n       'master of education - master of business administration',\n       'master of information technology', 'bachelor of business',\n       'master of engineering management',\n       'bachelor of information technology',\n       'master of professional accounting',\n       'master of international tourism and hospitality management',\n       'bachelor of tourism, hospitality and events',\n       'master of professional accounting - master of business administration',\n       'bachelor of commerce',\n       'master of international tourism and hospitality management - master of business administration',\n       'master of data science (professional)',\n       'master of information technology - master of business administration',\n       'postgraduate qualifying program - business'], dtype=object)"
           },
           "metadata": {}
         }
       ],
-      "execution_count": 12,
+      "execution_count": 13,
       "metadata": {
         "gather": {
-          "logged": 1753670203797
+          "logged": 1753771793457
         }
       }
     },
@@ -374,10 +397,10 @@
         "df = df.apply(assign_subjects, axis=1)"
       ],
       "outputs": [],
-      "execution_count": 13,
+      "execution_count": 14,
       "metadata": {
         "gather": {
-          "logged": 1753670203862
+          "logged": 1753771793505
         }
       }
     },
@@ -390,17 +413,39 @@
       "outputs": [
         {
           "output_type": "execute_result",
-          "execution_count": 14,
+          "execution_count": 15,
           "data": {
             "text/plain": "subject_1    0\nsubject_2    0\nsubject_3    0\ndtype: int64"
           },
           "metadata": {}
         }
       ],
-      "execution_count": 14,
+      "execution_count": 15,
       "metadata": {
         "gather": {
-          "logged": 1753670203941
+          "logged": 1753771793564
+        }
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df['subject_1'].value_counts()"
+      ],
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "execution_count": 16,
+          "data": {
+            "text/plain": "LB5113    102\nED5097     90\nCP5046     88\nCO5117     79\nBU1002     71\nTO5101     71\nEG5200     69\nCP1401     56\nTO1008     30\nBU1112     22\nMA5831     13\nLB5202      7\nName: subject_1, dtype: int64"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 16,
+      "metadata": {
+        "gather": {
+          "logged": 1753771793637
         }
       }
     },
@@ -412,17 +457,17 @@
       "outputs": [
         {
           "output_type": "execute_result",
-          "execution_count": 15,
+          "execution_count": 17,
           "data": {
             "text/plain": "master of business administration                                                                 102\nmaster of education - master of business administration                                            90\nmaster of information technology                                                                   77\nbachelor of business                                                                               71\nmaster of engineering management                                                                   69\nbachelor of information technology                                                                 56\nmaster of professional accounting                                                                  55\nmaster of international tourism and hospitality management                                         50\nbachelor of tourism, hospitality and events                                                        30\nmaster of professional accounting - master of business administration                              24\nbachelor of commerce                                                                               22\nmaster of international tourism and hospitality management - master of business administration     21\nmaster of data science (professional)                                                              13\nmaster of information technology - master of business administration                               11\npostgraduate qualifying program - business                                                          7\nName: course, dtype: int64"
           },
           "metadata": {}
         }
       ],
-      "execution_count": 15,
+      "execution_count": 17,
       "metadata": {
         "gather": {
-          "logged": 1753670204022
+          "logged": 1753771793732
         }
       }
     },
@@ -451,10 +496,10 @@
         "] "
       ],
       "outputs": [],
-      "execution_count": 16,
+      "execution_count": 18,
       "metadata": {
         "gather": {
-          "logged": 1753670204091
+          "logged": 1753771793791
         }
       }
     },
@@ -467,10 +512,10 @@
         ")\n"
       ],
       "outputs": [],
-      "execution_count": 17,
+      "execution_count": 19,
       "metadata": {
         "gather": {
-          "logged": 1753670204164
+          "logged": 1753771793852
         }
       }
     },
@@ -482,17 +527,17 @@
       "outputs": [
         {
           "output_type": "execute_result",
-          "execution_count": 18,
+          "execution_count": 20,
           "data": {
             "text/plain": "Non-IT    541\nIT        157\nName: course_group, dtype: int64"
           },
           "metadata": {}
         }
       ],
-      "execution_count": 18,
+      "execution_count": 20,
       "metadata": {
         "gather": {
-          "logged": 1753670204228
+          "logged": 1753771793969
         }
       }
     },
@@ -522,8 +567,8 @@
         "excluded_in_it = 3\n",
         "excluded_in_non_it = total_excluded - excluded_in_it  # 2\n",
         "\n",
-        "# Step 2: Assign cohorts to all students first\n",
-        "df['student_cohort'] = np.nan\n",
+        "# Step 2: Assign cohorts to all students first (clear student_cohort if needed)\n",
+        "df['student_cohort'] = np.nan  # optional clear\n",
         "\n",
         "# Find eligible indices by course_group to assign exclusions\n",
         "it_indices = df[df['course_group'] == 'IT'].index.to_numpy()\n",
@@ -646,10 +691,45 @@
           "text": "Academic status distribution by course_group:\n\nacademic_status  Academic Caution  Conditional  Excluded  Satisfactory\ncourse_group                                                          \nIT                             21            7         3           126\nNon-IT                         29           15         2           495\n"
         }
       ],
-      "execution_count": 19,
+      "execution_count": 21,
       "metadata": {
         "gather": {
-          "logged": 1753670204314
+          "logged": 1753771794111
+        }
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "###### Clean the student cohort column"
+      ],
+      "metadata": {
+        "nteract": {
+          "transient": {
+            "deleting": false
+          }
+        }
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df['student_cohort'].value_counts()"
+      ],
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "execution_count": 22,
+          "data": {
+            "text/plain": "New                109\nReturn to Study    107\nSRI to JCUB        104\nTransferred        102\nLOA                 99\nFirst year          92\nContinuing          80\nExcluded             5\nName: student_cohort, dtype: int64"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 22,
+      "metadata": {
+        "gather": {
+          "logged": 1753771794173
         }
       }
     },
@@ -664,6 +744,28 @@
           "transient": {
             "deleting": false
           }
+        }
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df['failed_subjects'].value_counts()"
+      ],
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "execution_count": 23,
+          "data": {
+            "text/plain": "CP5639    8\nCP5633    7\nCP1401    5\nCP1404    5\nCP1407    3\nCP1406    2\nCP5046    2\nCP5047    1\nName: failed_subjects, dtype: int64"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 23,
+      "metadata": {
+        "gather": {
+          "logged": 1753771794253
         }
       }
     },
@@ -713,7 +815,7 @@
         "# ---- IT Satisfactory: assign failed_subjects = 0 to most, leave 2-3 outliers with 1 or 2 ----\n",
         "\n",
         "satisfactory_it_indices = df[mask_satisfactory_it].index\n",
-        "num_outliers_it_satisfactory = 3\n",
+        "num_outliers_it_satisfactory = 6\n",
         "\n",
         "np.random.seed(101)\n",
         "outliers_it_satisfactory = np.random.choice(satisfactory_it_indices, size=num_outliers_it_satisfactory, replace=False)\n",
@@ -727,11 +829,18 @@
         "num_zeros_it_remaining = 3\n",
         "\n",
         "np.random.seed(102)\n",
-        "zeros_it_remaining = np.random.choice(remaining_it, size=num_zeros_it_remaining, replace=False)\n",
-        "df.loc[zeros_it_remaining, 'failed_subjects'] = 0\n",
+        "sample_size_it = min(num_zeros_it_remaining, len(remaining_it))\n",
+        "if sample_size_it > 0:\n",
+        "    zeros_it_remaining = np.random.choice(remaining_it, size=sample_size_it, replace=False)\n",
+        "    df.loc[zeros_it_remaining, 'failed_subjects'] = 0\n",
         "\n",
-        "remaining_it_other = remaining_it.difference(zeros_it_remaining)\n",
-        "df.loc[remaining_it_other, 'failed_subjects'] = np.random.choice([1, 2], size=len(remaining_it_other), replace=True)\n",
+        "    remaining_it_other = remaining_it.difference(zeros_it_remaining)\n",
+        "    if len(remaining_it_other) > 0:\n",
+        "        df.loc[remaining_it_other, 'failed_subjects'] = np.random.choice([1, 2], size=len(remaining_it_other), replace=True)\n",
+        "else:\n",
+        "    # If no remaining IT to sample zeros, assign 1 or 2 to all remaining (if any)\n",
+        "    if len(remaining_it) > 0:\n",
+        "        df.loc[remaining_it, 'failed_subjects'] = np.random.choice([1, 2], size=len(remaining_it), replace=True)\n",
         "\n",
         "# ---- Non-IT Satisfactory: assign failed_subjects = 0 to most, leave 2-3 outliers with 1 or 2 ----\n",
         "\n",
@@ -750,11 +859,24 @@
         "num_zeros_non_it_remaining = 3\n",
         "\n",
         "np.random.seed(104)\n",
-        "zeros_non_it_remaining = np.random.choice(remaining_non_it, size=num_zeros_non_it_remaining, replace=False)\n",
-        "df.loc[zeros_non_it_remaining, 'failed_subjects'] = 0\n",
+        "sample_size_non_it = min(num_zeros_non_it_remaining, len(remaining_non_it))\n",
+        "if sample_size_non_it > 0:\n",
+        "    zeros_non_it_remaining = np.random.choice(remaining_non_it, size=sample_size_non_it, replace=False)\n",
+        "    df.loc[zeros_non_it_remaining, 'failed_subjects'] = 0\n",
         "\n",
-        "remaining_non_it_other = remaining_non_it.difference(zeros_non_it_remaining)\n",
-        "df.loc[remaining_non_it_other, 'failed_subjects'] = np.random.choice([1, 2], size=len(remaining_non_it_other), replace=True)\n",
+        "    remaining_non_it_other = remaining_non_it.difference(zeros_non_it_remaining)\n",
+        "    if len(remaining_non_it_other) > 0:\n",
+        "        df.loc[remaining_non_it_other, 'failed_subjects'] = np.random.choice([1, 2], size=len(remaining_non_it_other), replace=True)\n",
+        "else:\n",
+        "    # If no remaining Non-IT to sample zeros, assign 1 or 2 to all remaining (if any)\n",
+        "    if len(remaining_non_it) > 0:\n",
+        "        df.loc[remaining_non_it, 'failed_subjects'] = np.random.choice([1, 2], size=len(remaining_non_it), replace=True)\n",
+        "\n",
+        "# ---- Convert 'failed_subjects' to numeric and clean to avoid type errors ----\n",
+        "\n",
+        "df['failed_subjects'] = pd.to_numeric(df['failed_subjects'], errors='coerce')   # convert with coercion\n",
+        "df['failed_subjects'].fillna(0, inplace=True)                                  # fill NaNs with zero\n",
+        "df['failed_subjects'] = df['failed_subjects'].astype(int)                      # convert to int\n",
         "\n",
         "# ---- Summary ----\n",
         "\n",
@@ -775,13 +897,13 @@
         {
           "output_type": "stream",
           "name": "stdout",
-          "text": "Total students with failed_subjects > 3: 8\n - IT failed_subjects > 3: 6\n - Non-IT failed_subjects > 3: 2\nIT Satisfactory students with failed_subjects = 0: 123\nIT Satisfactory outliers with failed_subjects 1 or 2: 3\nNon-IT Satisfactory students with failed_subjects = 0: 492\nNon-IT Satisfactory outliers with failed_subjects 1 or 2: 3\nFailed subjects distribution for IT students:\n0.0    126\n2.0     15\n1.0     10\n4.0      6\nName: failed_subjects, dtype: int64\nFailed subjects distribution for Non-IT students:\n0.0    495\n1.0     22\n2.0     22\n4.0      2\nName: failed_subjects, dtype: int64\n"
+          "text": "Total students with failed_subjects > 3: 8\n - IT failed_subjects > 3: 6\n - Non-IT failed_subjects > 3: 2\nIT Satisfactory students with failed_subjects = 0: 120\nIT Satisfactory outliers with failed_subjects 1 or 2: 6\nNon-IT Satisfactory students with failed_subjects = 0: 492\nNon-IT Satisfactory outliers with failed_subjects 1 or 2: 3\nFailed subjects distribution for IT students:\n0    126\n2     14\n1     11\n4      6\nName: failed_subjects, dtype: int64\nFailed subjects distribution for Non-IT students:\n0    495\n1     22\n2     22\n4      2\nName: failed_subjects, dtype: int64\n"
         }
       ],
-      "execution_count": 28,
+      "execution_count": 24,
       "metadata": {
         "gather": {
-          "logged": 1753670205264
+          "logged": 1753771794358
         }
       }
     },
@@ -886,13 +1008,13 @@
         {
           "output_type": "stream",
           "name": "stdout",
-          "text": "Mean attendance_1: 68.94928366762177\nMean attendance_2: 68.56375358166189\nMean attendance_3: 68.5810888252149\nOverall attendance mean (all columns): 68.69804202483286\n\nAttendance by Academic Status:\n                   attendance_1  attendance_2  attendance_3\nacademic_status                                           \nAcademic Caution     56.896000     54.612000     55.014000\nConditional          61.513636     57.818182     58.213636\nExcluded             48.760000     33.340000     44.720000\nSatisfactory         70.345733     70.351369     70.232850\n\nAttendance by Student Cohort:\n                  attendance_1  attendance_2  attendance_3\nstudent_cohort                                           \nContinuing          69.946250     70.867500     70.945000\nExcluded            48.760000     33.340000     44.720000\nFirst year          64.881522     63.025000     63.453261\nLOA                 71.006061     71.032323     71.539394\nNew                 66.894495     66.907339     66.609174\nReturn to Study     68.550467     67.025234     65.822430\nSRI to JCUB         73.200962     72.947115     73.112500\nTransferred         69.108824     69.998039     70.031373\n"
+          "text": "Mean attendance_1: 68.93209169054441\nMean attendance_2: 68.54656160458453\nMean attendance_3: 68.56389684813755\nOverall attendance mean (all columns): 68.6808500477555\n\nAttendance by Academic Status:\n                   attendance_1  attendance_2  attendance_3\nacademic_status                                           \nAcademic Caution     56.896000     54.612000     55.014000\nConditional          61.513636     57.818182     58.213636\nExcluded             48.760000     33.340000     44.720000\nSatisfactory         70.326409     70.332045     70.213527\n\nAttendance by Student Cohort:\n                  attendance_1  attendance_2  attendance_3\nstudent_cohort                                           \nContinuing          69.946250     70.867500     70.945000\nExcluded            48.760000     33.340000     44.720000\nFirst year          64.881522     63.025000     63.453261\nLOA                 71.006061     71.032323     71.539394\nNew                 66.857798     66.870642     66.572477\nReturn to Study     68.513084     66.987850     65.785047\nSRI to JCUB         73.162500     72.908654     73.074038\nTransferred         69.108824     69.998039     70.031373\n"
         }
       ],
-      "execution_count": 53,
+      "execution_count": 25,
       "metadata": {
         "gather": {
-          "logged": 1753670207918
+          "logged": 1753771794646
         }
       }
     },
@@ -924,10 +1046,10 @@
           "text": "                    count       mean        std   min      25%     50%  \\\nsubject_1_assess_1  698.0  51.630702  28.580143  0.15  27.8150  52.105   \nsubject_1_assess_2  698.0  49.795143  29.158082  0.01  22.6075  49.780   \nsubject_1_assess_3  698.0  49.373854  29.734640  0.09  23.3275  47.630   \nsubject_2_assess_1  698.0  52.323109  28.602609  0.16  27.7725  53.340   \nsubject_2_assess_2  698.0  47.862307  29.092952  0.30  22.5225  46.940   \nsubject_2_assess_3  698.0  49.632564  28.842227  0.04  25.1425  50.740   \nsubject_3_assess_1  698.0  50.648266  29.296110  0.12  24.2625  52.440   \nsubject_3_assess_2  698.0  48.930129  27.774693  0.19  25.3175  46.675   \nsubject_3_assess_3  698.0  48.603209  28.930261  0.31  25.7075  48.550   \n\n                        75%    max  \nsubject_1_assess_1  75.6475  99.98  \nsubject_1_assess_2  75.5650  99.92  \nsubject_1_assess_3  76.1800  99.68  \nsubject_2_assess_1  77.5200  99.91  \nsubject_2_assess_2  72.9775  99.87  \nsubject_2_assess_3  73.5000  99.99  \nsubject_3_assess_1  76.3475  99.89  \nsubject_3_assess_2  71.3025  99.71  \nsubject_3_assess_3  73.6050  99.91  \n"
         }
       ],
-      "execution_count": 54,
+      "execution_count": 26,
       "metadata": {
         "gather": {
-          "logged": 1753670208024
+          "logged": 1753771794800
         }
       }
     },
@@ -985,7 +1107,7 @@
         "        scores.append(score)\n",
         "    return pd.Series(scores, index=subject_cols)\n",
         "\n",
-        "# Apply to the df\n",
+        "# Apply to a df\n",
         "np.random.seed(120)  # For reproducibility\n",
         "df[subject_cols] = df.apply(assign_assessments, axis=1)\n",
         "\n",
@@ -997,13 +1119,13 @@
         {
           "output_type": "stream",
           "name": "stdout",
-          "text": "68.37590735434576\nacademic_status\nAcademic Caution    56.682833\nConditional         54.615152\nExcluded             0.000000\nSatisfactory        70.355408\ndtype: float64\n"
+          "text": "68.37304202483286\nacademic_status\nAcademic Caution    56.682833\nConditional         54.615152\nExcluded             0.000000\nSatisfactory        70.352187\ndtype: float64\n"
         }
       ],
-      "execution_count": 55,
+      "execution_count": 27,
       "metadata": {
         "gather": {
-          "logged": 1753670208473
+          "logged": 1753771795206
         }
       }
     },
@@ -1017,13 +1139,13 @@
         {
           "output_type": "stream",
           "name": "stdout",
-          "text": "                    count       mean        std  min     25%    50%     75%  \\\nsubject_1_assess_1  698.0  68.599427  11.107925  0.0  64.000  69.30  74.875   \nsubject_1_assess_2  698.0  68.654585  10.503741  0.0  64.100  69.40  74.700   \nsubject_1_assess_3  698.0  68.926648  10.389201  0.0  64.925  69.80  75.000   \nsubject_2_assess_1  698.0  68.490401  10.873544  0.0  63.900  69.80  74.900   \nsubject_2_assess_2  698.0  68.488682  10.773587  0.0  64.025  69.70  74.800   \nsubject_2_assess_3  698.0  67.932665  10.960567  0.0  63.225  69.15  74.600   \nsubject_3_assess_1  698.0  68.314900  10.770884  0.0  63.500  69.60  74.700   \nsubject_3_assess_2  698.0  67.914900  10.705773  0.0  63.325  68.80  74.575   \nsubject_3_assess_3  698.0  68.148281  10.919678  0.0  63.500  69.40  74.275   \n\n                     max  \nsubject_1_assess_1  93.9  \nsubject_1_assess_2  91.0  \nsubject_1_assess_3  94.5  \nsubject_2_assess_1  93.0  \nsubject_2_assess_2  90.0  \nsubject_2_assess_3  90.0  \nsubject_3_assess_1  94.6  \nsubject_3_assess_2  87.7  \nsubject_3_assess_3  91.3  \n"
+          "text": "                    count       mean        std  min     25%    50%     75%  \\\nsubject_1_assess_1  698.0  68.596562  11.108105  0.0  64.000  69.30  74.875   \nsubject_1_assess_2  698.0  68.651719  10.502881  0.0  64.100  69.40  74.700   \nsubject_1_assess_3  698.0  68.923782  10.390920  0.0  64.925  69.80  75.000   \nsubject_2_assess_1  698.0  68.487536  10.874676  0.0  63.900  69.80  74.900   \nsubject_2_assess_2  698.0  68.485817  10.775075  0.0  64.025  69.70  74.800   \nsubject_2_assess_3  698.0  67.929799  10.958035  0.0  63.225  69.15  74.600   \nsubject_3_assess_1  698.0  68.312034  10.769822  0.0  63.500  69.60  74.700   \nsubject_3_assess_2  698.0  67.912034  10.702801  0.0  63.325  68.80  74.575   \nsubject_3_assess_3  698.0  68.145415  10.917010  0.0  63.500  69.40  74.275   \n\n                     max  \nsubject_1_assess_1  93.9  \nsubject_1_assess_2  91.0  \nsubject_1_assess_3  94.5  \nsubject_2_assess_1  93.0  \nsubject_2_assess_2  90.0  \nsubject_2_assess_3  90.0  \nsubject_3_assess_1  94.6  \nsubject_3_assess_2  87.7  \nsubject_3_assess_3  91.3  \n"
         }
       ],
-      "execution_count": 56,
+      "execution_count": 28,
       "metadata": {
         "gather": {
-          "logged": 1753670208547
+          "logged": 1753771795292
         }
       }
     },
@@ -1118,10 +1240,10 @@
           "text": "subject_1_assess_1: assigned 31 low outliers, 31 high outliers\nsubject_1_assess_2: assigned 31 low outliers, 31 high outliers\nsubject_1_assess_3: assigned 31 low outliers, 31 high outliers\nsubject_1_assess_4: assigned 31 low outliers, 31 high outliers\nsubject_2_assess_1: assigned 31 low outliers, 31 high outliers\nsubject_2_assess_2: assigned 31 low outliers, 31 high outliers\nsubject_2_assess_3: assigned 31 low outliers, 31 high outliers\nsubject_2_assess_4: assigned 31 low outliers, 31 high outliers\nsubject_3_assess_1: assigned 31 low outliers, 31 high outliers\nsubject_3_assess_2: assigned 31 low outliers, 31 high outliers\nsubject_3_assess_3: assigned 31 low outliers, 31 high outliers\nsubject_3_assess_4: assigned 31 low outliers, 31 high outliers\nTotal low outliers assigned: 372\nTotal high outliers assigned: 372\n"
         }
       ],
-      "execution_count": 57,
+      "execution_count": 29,
       "metadata": {
         "gather": {
-          "logged": 1753670208620
+          "logged": 1753771795362
         }
       }
     },
@@ -1135,14 +1257,13 @@
         "\n",
         "for col in subject_cols:\n",
         "    low_outlier_indices[col] = set(df[df[col] <= 40].index)\n",
-        "    high_outlier_indices[col] = set(df[df[col] >= 90].index)\n",
-        "\n"
+        "    high_outlier_indices[col] = set(df[df[col] >= 90].index)\n"
       ],
       "outputs": [],
-      "execution_count": 58,
+      "execution_count": 30,
       "metadata": {
         "gather": {
-          "logged": 1753670208715
+          "logged": 1753771795421
         }
       }
     },
@@ -1159,10 +1280,10 @@
         "high_counts = Counter(all_high_indices)\n"
       ],
       "outputs": [],
-      "execution_count": 59,
+      "execution_count": 31,
       "metadata": {
         "gather": {
-          "logged": 1753670208806
+          "logged": 1753771795470
         }
       }
     },
@@ -1182,10 +1303,10 @@
           "text": "Low outliers per student frequency:\nCounter({1: 242, 2: 81, 3: 16, 12: 5, 5: 2})\n\nHigh outliers per student frequency:\nCounter({1: 213, 2: 66, 3: 21})\n"
         }
       ],
-      "execution_count": 60,
+      "execution_count": 32,
       "metadata": {
         "gather": {
-          "logged": 1753670208901
+          "logged": 1753771795523
         }
       }
     },
@@ -1199,13 +1320,13 @@
         {
           "output_type": "stream",
           "name": "stdout",
-          "text": "                    count       mean        std  min   25%    50%   75%   max\nsubject_1_assess_1  698.0  67.493123  16.241171  0.0  63.5  69.10  75.6  99.9\nsubject_1_assess_2  698.0  67.506304  15.825559  0.0  63.5  69.35  75.3  99.8\nsubject_1_assess_3  698.0  67.696848  15.796821  0.0  64.2  69.70  75.5  99.7\nsubject_2_assess_1  698.0  67.284384  16.034464  0.0  63.2  69.80  75.5  99.6\nsubject_2_assess_2  698.0  67.344986  15.708606  0.0  63.4  69.65  75.4  99.4\nsubject_2_assess_3  698.0  66.617192  16.379987  0.0  62.2  69.05  74.9  99.5\nsubject_3_assess_1  698.0  67.162464  15.978574  0.0  62.6  69.50  75.4  99.9\nsubject_3_assess_2  698.0  66.775215  15.835586  0.0  62.4  68.70  75.0  99.3\nsubject_3_assess_3  698.0  66.996848  16.027989  0.0  62.4  69.30  74.9  99.7\n"
+          "text": "                    count       mean        std  min     25%    50%   75%  \\\nsubject_1_assess_1  698.0  67.490258  16.241099  0.0  63.500  69.10  75.6   \nsubject_1_assess_2  698.0  67.503438  15.824780  0.0  63.500  69.35  75.3   \nsubject_1_assess_3  698.0  67.696848  15.796821  0.0  64.200  69.70  75.5   \nsubject_2_assess_1  698.0  67.281519  16.035016  0.0  63.200  69.80  75.5   \nsubject_2_assess_2  698.0  67.342120  15.709418  0.0  63.325  69.65  75.4   \nsubject_2_assess_3  698.0  66.614327  16.378063  0.0  62.200  69.05  74.9   \nsubject_3_assess_1  698.0  67.162464  15.978574  0.0  62.600  69.50  75.4   \nsubject_3_assess_2  698.0  66.772350  15.833371  0.0  62.400  68.70  75.0   \nsubject_3_assess_3  698.0  66.993983  16.025965  0.0  62.400  69.30  74.9   \n\n                     max  \nsubject_1_assess_1  99.9  \nsubject_1_assess_2  99.8  \nsubject_1_assess_3  99.7  \nsubject_2_assess_1  99.6  \nsubject_2_assess_2  99.4  \nsubject_2_assess_3  99.5  \nsubject_3_assess_1  99.9  \nsubject_3_assess_2  99.3  \nsubject_3_assess_3  99.7  \n"
         }
       ],
-      "execution_count": 61,
+      "execution_count": 33,
       "metadata": {
         "gather": {
-          "logged": 1753670208993
+          "logged": 1753771795580
         }
       }
     }
