@@ -20,15 +20,16 @@ Business Intelligence Dashboards: Integration with Power BI for interactive data
 Reproducible Pipelines: Jupyter notebooks and modular scripts for end-to-end transparency and customization.
 
 ### Repository Structure
+
 student-success-analytics-jcu/
 │
-├── data/                  # Sample or synthetic data (de-identified)
-├── notebooks/             # Jupyter notebooks for EDA and modeling
-├── scripts/               # Python scripts for data processing and model training
-├── dashboards/            # Power BI dashboard files or image exports
-├── azure/                 # Azure ML deployment scripts and configurations
-├── requirements.txt       # Python dependencies
-└── README.md              # You're here!
+├── data/ # Sample or synthetic data (de-identified)
+├── notebooks/ # Jupyter notebooks for EDA and modeling
+├── scripts/ # Python scripts for data processing and model training
+├── dashboards/ # Power BI dashboard files or image exports
+├── azure/ # Azure ML deployment scripts and configurations
+├── requirements.txt # Python dependencies
+└── README.md # You're here!
 
 ### Getting Started
 
