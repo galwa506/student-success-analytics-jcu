@@ -1,12 +1,12 @@
 # student-success-analytics-jcu
-## Data Disclaimer
 
+### Data Disclaimer
 All data files in this repository (within `/data/`) are synthetic and contain no real student or university records. They serve as examples to demonstrate code functionality only.
 
-Overview
+### Overview
 student-success-analytics-jcu is a comprehensive analytics platform designed to predict and enhance student success and retention for JCU. Leveraging modern data science techniques, the project integrates data preprocessing, machine learning modeling, cloud deployment (Azure ML), and powerful dashboards (Power BI) to enable early identification of at-risk students and support evidence-based interventions.
 
-Features
+### Features
 Data Cleaning & Preprocessing: Utilities for preparing institutional data for analysis.
 
 Exploratory Data Analysis: Notebooks and reports analyzing trends in student performance, retention rates, and risk factors.
@@ -19,8 +19,7 @@ Business Intelligence Dashboards: Integration with Power BI for interactive data
 
 Reproducible Pipelines: Jupyter notebooks and modular scripts for end-to-end transparency and customization.
 
-Repository Structure
-text
+### Repository Structure
 student-success-analytics-jcu/
 │
 ├── data/                  # Sample or synthetic data (de-identified)
@@ -30,17 +29,16 @@ student-success-analytics-jcu/
 ├── azure/                 # Azure ML deployment scripts and configurations
 ├── requirements.txt       # Python dependencies
 └── README.md              # You're here!
-Getting Started
-Prerequisites
+
+### Getting Started
+
+### Prerequisites
 Python 3.8+
-
 pip or conda
-
 (Optional) Azure account for cloud deployment
-
 (Optional) Power BI Desktop for dashboard visualization
 
-Setup
+### Setup
 Clone the repository:
 
 bash
@@ -56,9 +54,9 @@ Open the notebooks/ folder in JupyterLab or Jupyter Notebook.
 
 Data Preparation:
 
-Place your de-identified student data in the data/ folder, following the required schema.
+Place your de-identified or mock student data in the data/ folder, following the required schema.
 
-Running Example Models:
+### Running Example Models:
 
 See notebooks for step-by-step EDA, feature engineering, and predictive modeling.
 
@@ -72,7 +70,7 @@ Open Power BI Desktop and load .pbix files from dashboards/.
 
 Connect to processed data exports to visualize outcomes and risk profiles.
 
-Key Technologies
+### Key Technologies
 Python (pandas, numpy, scikit-learn, xgboost, etc.)
 
 Azure ML for scalable cloud model serving
@@ -81,22 +79,20 @@ Power BI for business intelligence and dashboarding
 
 Jupyter for interactive data analysis
 
-Use Cases
+### Use Cases
 Academic Advisors: Identify at-risk students early for targeted intervention.
 
 Administrators: Monitor retention trends and forecast cohorts’ academic outcomes.
 
 Data Science Teams: Reuse and adapt reproducible pipelines for institutional research.
 
-Contributing
+### Contributing
 Contributions, suggestions, and improvements are welcome! Please open an issue or submit a pull request.
 
-License
+### License
 This project is for academic and demonstration purposes. For details, see the LICENSE file (if present).
 
-Acknowledgements
+### Acknowledgements
 Developed at James Cook University, Australia.
 
 For questions or collaborations, please contact the repository owner via GitHub Issues.
-
-You can further customize this README to suit your deployment or publication needs!
