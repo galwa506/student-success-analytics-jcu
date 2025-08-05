@@ -25,7 +25,7 @@
       "execution_count": 1,
       "metadata": {
         "gather": {
-          "logged": 1753854199523
+          "logged": 1754298441807
         }
       }
     },
@@ -66,7 +66,7 @@
       "execution_count": 2,
       "metadata": {
         "gather": {
-          "logged": 1753854199729
+          "logged": 1754298442194
         }
       }
     },
@@ -99,7 +99,7 @@
       "execution_count": 3,
       "metadata": {
         "gather": {
-          "logged": 1753854199803
+          "logged": 1754298442275
         }
       }
     },
@@ -123,7 +123,7 @@
       "execution_count": 4,
       "metadata": {
         "gather": {
-          "logged": 1753854199870
+          "logged": 1754298442341
         }
       }
     },
@@ -161,7 +161,7 @@
       "execution_count": 5,
       "metadata": {
         "gather": {
-          "logged": 1753854200040
+          "logged": 1754298442415
         }
       }
     },
@@ -210,7 +210,7 @@
       "execution_count": 6,
       "metadata": {
         "gather": {
-          "logged": 1753854200175
+          "logged": 1754298442492
         }
       }
     },
@@ -233,7 +233,7 @@
       "execution_count": 7,
       "metadata": {
         "gather": {
-          "logged": 1753854200348
+          "logged": 1754298442581
         }
       }
     },
@@ -263,7 +263,7 @@
       "execution_count": 8,
       "metadata": {
         "gather": {
-          "logged": 1753854200418
+          "logged": 1754298442658
         }
       }
     },
@@ -286,7 +286,7 @@
       "execution_count": 9,
       "metadata": {
         "gather": {
-          "logged": 1753854200526
+          "logged": 1754298442734
         }
       }
     },
@@ -314,7 +314,7 @@
       "execution_count": 10,
       "metadata": {
         "gather": {
-          "logged": 1753854200688
+          "logged": 1754298442813
         }
       }
     },
@@ -341,7 +341,7 @@
       "execution_count": 11,
       "metadata": {
         "gather": {
-          "logged": 1753854200834
+          "logged": 1754298442884
         }
       }
     },
@@ -355,7 +355,7 @@
       "execution_count": 12,
       "metadata": {
         "gather": {
-          "logged": 1753854200984
+          "logged": 1754298442958
         }
       }
     },
@@ -378,7 +378,7 @@
       "execution_count": 13,
       "metadata": {
         "gather": {
-          "logged": 1753854201052
+          "logged": 1754298443036
         }
       }
     },
@@ -400,7 +400,7 @@
       "execution_count": 14,
       "metadata": {
         "gather": {
-          "logged": 1753854201162
+          "logged": 1754298443099
         }
       }
     },
@@ -423,7 +423,7 @@
       "execution_count": 15,
       "metadata": {
         "gather": {
-          "logged": 1753854201318
+          "logged": 1754298443195
         }
       }
     },
@@ -445,7 +445,7 @@
       "execution_count": 16,
       "metadata": {
         "gather": {
-          "logged": 1753854201452
+          "logged": 1754298443292
         }
       }
     },
@@ -467,7 +467,7 @@
       "execution_count": 17,
       "metadata": {
         "gather": {
-          "logged": 1753854201601
+          "logged": 1754298443380
         }
       }
     },
@@ -499,7 +499,7 @@
       "execution_count": 18,
       "metadata": {
         "gather": {
-          "logged": 1753854201663
+          "logged": 1754298443462
         }
       }
     },
@@ -509,13 +509,13 @@
         "# Create a new column 'course_group' based on whether the course is in the IT list\n",
         "df['course_group'] = df['course'].apply(\n",
         "    lambda x: 'IT' if x in it_courses else 'Non-IT'\n",
-        ")\n"
+        ")"
       ],
       "outputs": [],
       "execution_count": 19,
       "metadata": {
         "gather": {
-          "logged": 1753854201779
+          "logged": 1754298443522
         }
       }
     },
@@ -537,7 +537,7 @@
       "execution_count": 20,
       "metadata": {
         "gather": {
-          "logged": 1753854201912
+          "logged": 1754298443690
         }
       }
     },
@@ -694,7 +694,7 @@
       "execution_count": 21,
       "metadata": {
         "gather": {
-          "logged": 1753854202041
+          "logged": 1754298443782
         }
       }
     },
@@ -729,7 +729,7 @@
       "execution_count": 22,
       "metadata": {
         "gather": {
-          "logged": 1753854202204
+          "logged": 1754298443859
         }
       }
     },
@@ -765,7 +765,7 @@
       "execution_count": 23,
       "metadata": {
         "gather": {
-          "logged": 1753854202279
+          "logged": 1754298443943
         }
       }
     },
@@ -903,7 +903,7 @@
       "execution_count": 24,
       "metadata": {
         "gather": {
-          "logged": 1753854202421
+          "logged": 1754298444045
         }
       }
     },
@@ -1014,7 +1014,7 @@
       "execution_count": 25,
       "metadata": {
         "gather": {
-          "logged": 1753854202571
+          "logged": 1754298444267
         }
       }
     },
@@ -1049,7 +1049,7 @@
       "execution_count": 26,
       "metadata": {
         "gather": {
-          "logged": 1753854202759
+          "logged": 1754298444357
         }
       }
     },
@@ -1125,7 +1125,7 @@
       "execution_count": 27,
       "metadata": {
         "gather": {
-          "logged": 1753854202832
+          "logged": 1754298444641
         }
       }
     },
@@ -1145,7 +1145,7 @@
       "execution_count": 28,
       "metadata": {
         "gather": {
-          "logged": 1753854202899
+          "logged": 1754298444704
         }
       }
     },
@@ -1243,7 +1243,7 @@
       "execution_count": 29,
       "metadata": {
         "gather": {
-          "logged": 1753854203041
+          "logged": 1754298444786
         }
       }
     },
@@ -1257,13 +1257,13 @@
         "\n",
         "for col in subject_cols:\n",
         "    low_outlier_indices[col] = set(df[df[col] <= 40].index)\n",
-        "    high_outlier_indices[col] = set(df[df[col] >= 90].index)\n"
+        "    high_outlier_indices[col] = set(df[df[col] >= 90].index)"
       ],
       "outputs": [],
       "execution_count": 30,
       "metadata": {
         "gather": {
-          "logged": 1753854203181
+          "logged": 1754298444848
         }
       }
     },
@@ -1283,7 +1283,7 @@
       "execution_count": 31,
       "metadata": {
         "gather": {
-          "logged": 1753854203310
+          "logged": 1754298444942
         }
       }
     },
@@ -1306,7 +1306,7 @@
       "execution_count": 32,
       "metadata": {
         "gather": {
-          "logged": 1753854203458
+          "logged": 1754298445004
         }
       }
     },
@@ -1314,7 +1314,7 @@
       "cell_type": "code",
       "source": [
         "subject_cols = [f\"subject_{i}_assess_{j}\" for i in range(1,4) for j in range(1,4)]\n",
-        "print(df[subject_cols].describe().transpose())\n"
+        "print(df[subject_cols].describe().transpose())"
       ],
       "outputs": [
         {
@@ -1326,7 +1326,7 @@
       "execution_count": 33,
       "metadata": {
         "gather": {
-          "logged": 1753854203528
+          "logged": 1754298445068
         }
       }
     },
@@ -1363,7 +1363,7 @@
       "execution_count": 34,
       "metadata": {
         "gather": {
-          "logged": 1753854203604
+          "logged": 1754298445129
         }
       }
     },
@@ -1383,7 +1383,7 @@
       "execution_count": 35,
       "metadata": {
         "gather": {
-          "logged": 1753854203769
+          "logged": 1754298445192
         }
       }
     },
@@ -1476,7 +1476,7 @@
       "execution_count": 36,
       "metadata": {
         "gather": {
-          "logged": 1753854203909
+          "logged": 1754298445281
         },
         "collapsed": false
       }
@@ -1499,7 +1499,7 @@
       "execution_count": 37,
       "metadata": {
         "gather": {
-          "logged": 1753854204098
+          "logged": 1754298445349
         }
       }
     },
@@ -1546,7 +1546,7 @@
       "execution_count": 38,
       "metadata": {
         "gather": {
-          "logged": 1753854204166
+          "logged": 1754298445440
         }
       }
     },
@@ -1604,7 +1604,7 @@
       "execution_count": 39,
       "metadata": {
         "gather": {
-          "logged": 1753854204230
+          "logged": 1754298445543
         }
       }
     },
@@ -1639,7 +1639,7 @@
       "execution_count": 40,
       "metadata": {
         "gather": {
-          "logged": 1753854204391
+          "logged": 1754298445633
         }
       }
     },
@@ -1652,7 +1652,7 @@
       "execution_count": 41,
       "metadata": {
         "gather": {
-          "logged": 1753854204525
+          "logged": 1754298445716
         }
       }
     },
@@ -1674,9 +1674,51 @@
       "execution_count": 42,
       "metadata": {
         "gather": {
-          "logged": 1753854204709
+          "logged": 1754298445802
         }
       }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##### Clean Readiness Assessment Data"
+      ],
+      "metadata": {
+        "nteract": {
+          "transient": {
+            "deleting": false
+          }
+        }
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df['readiness_assessment_results'].value_counts()"
+      ],
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "execution_count": 43,
+          "data": {
+            "text/plain": "L/G:9/10 N:5/10 R:8/10    698\nName: readiness_assessment_results, dtype: int64"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 43,
+      "metadata": {
+        "gather": {
+          "logged": 1754298445897
+        }
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "outputs": [],
+      "execution_count": null,
+      "metadata": {}
     },
     {
       "cell_type": "markdown",
@@ -1694,40 +1736,72 @@
     {
       "cell_type": "code",
       "source": [
+        "# def risk_level_week3(row):\n",
+        "#     score = 0\n",
+        "\n",
+        "#     if row['academic_status'] in ['Academic Caution', 'Conditional', 'Excluded']:\n",
+        "#         score += 1\n",
+        "\n",
+        "#     if row['failed_subjects'] > 0:\n",
+        "#         score += 1\n",
+        "\n",
+        "#     if row['student_cohort'] in ['New', 'First year']:\n",
+        "#         score += 1\n",
+        "\n",
+        "#     if pd.notna(row['attendance_1']) and row['attendance_1'] <= 50:\n",
+        "#         score += 1\n",
+        "\n",
+        "#     if pd.notna(row['subject_1_assess_1']) and row['subject_1_assess_1'] < 50:\n",
+        "#         score += 1\n",
+        "\n",
+        "#     if row['identified_issues'] != 'No issues identified':\n",
+        "#         score += 1 \n",
+        "\n",
+        "#     # Assign level\n",
+        "#     if score >= 3:\n",
+        "#         return 'High'\n",
+        "#     elif score == 2:\n",
+        "#         return 'Medium'\n",
+        "#     else:\n",
+        "#         return 'Low'\n"
+      ],
+      "outputs": [],
+      "execution_count": 44,
+      "metadata": {
+        "gather": {
+          "logged": 1754298446035
+        }
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
         "def risk_level_week3(row):\n",
         "    score = 0\n",
         "\n",
-        "    if row['academic_status'] in ['Academic Caution', 'Conditional', 'Excluded']:\n",
+        "    # Replicating 'At Risk' logic from DAX:\n",
+        "    if row['attendance_1'] < 50 or row['attendance_2'] < 50 or row['attendance_3'] < 50:\n",
         "        score += 1\n",
         "\n",
-        "    if row['failed_subjects'] > 0:\n",
+        "    if row['academic_status'] in ['Conditional', 'Academic Caution']:\n",
         "        score += 1\n",
         "\n",
-        "    if row['student_cohort'] in ['New', 'First year']:\n",
+        "    if row['identified_issues'] == 'Late Enrollment':\n",
         "        score += 1\n",
         "\n",
-        "    if pd.notna(row['attendance_1']) and row['attendance_1'] <= 50:\n",
-        "        score += 1\n",
-        "\n",
-        "    if pd.notna(row['subject_1_assess_1']) and row['subject_1_assess_1'] < 50:\n",
-        "        score += 1\n",
-        "\n",
-        "    if row['identified_issues'] != 'No issues identified':\n",
-        "        score += 1\n",
-        "\n",
-        "    # Assign level\n",
-        "    if score >= 3:\n",
+        "    # Assign level based on score (1 to 3)\n",
+        "    if score >= 2:\n",
         "        return 'High'\n",
-        "    elif score == 2:\n",
+        "    elif score == 1:\n",
         "        return 'Medium'\n",
         "    else:\n",
         "        return 'Low'\n"
       ],
       "outputs": [],
-      "execution_count": 43,
+      "execution_count": 45,
       "metadata": {
         "gather": {
-          "logged": 1753854204778
+          "logged": 1754298446115
         }
       }
     },
@@ -1737,10 +1811,10 @@
         "df['risk_assessments'] = df.apply(risk_level_week3, axis=1)"
       ],
       "outputs": [],
-      "execution_count": 44,
+      "execution_count": 46,
       "metadata": {
         "gather": {
-          "logged": 1753854204839
+          "logged": 1754298446205
         }
       }
     },
@@ -1752,17 +1826,17 @@
       "outputs": [
         {
           "output_type": "execute_result",
-          "execution_count": 45,
+          "execution_count": 47,
           "data": {
-            "text/plain": "Low       416\nMedium    187\nHigh       95\nName: risk_assessments, dtype: int64"
+            "text/plain": "Low       544\nMedium     93\nHigh       61\nName: risk_assessments, dtype: int64"
           },
           "metadata": {}
         }
       ],
-      "execution_count": 45,
+      "execution_count": 47,
       "metadata": {
         "gather": {
-          "logged": 1753854204974
+          "logged": 1754298446303
         }
       }
     },
@@ -1770,19 +1844,54 @@
       "cell_type": "code",
       "source": [
         "counts_by_cohort = df.groupby(['student_cohort', 'risk_assessments']).size().unstack(fill_value=0)\n",
-        "print(counts_by_cohort)\n"
+        "print(counts_by_cohort)"
       ],
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
-          "text": "risk_assessments  High  Low  Medium\nstudent_cohort                     \nContinuing           9   67       4\nExcluded             5    0       0\nFirst year          23    0      69\nLOA                 16   78       5\nNew                 16    0      93\nReturn to Study     25   76       6\nSRI to JCUB          0   97       7\nTransferred          1   98       3\n"
+          "text": "risk_assessments  High  Low  Medium\nstudent_cohort                     \nContinuing           6   68       6\nExcluded             2    0       3\nFirst year          18   51      23\nLOA                 10   74      15\nNew                  2   79      28\nReturn to Study     23   78       6\nSRI to JCUB          0   95       9\nTransferred          0   99       3\n"
         }
       ],
-      "execution_count": 46,
+      "execution_count": 48,
       "metadata": {
         "gather": {
-          "logged": 1753854205099
+          "logged": 1754298446389
+        }
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df.shape"
+      ],
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "execution_count": 49,
+          "data": {
+            "text/plain": "(698, 40)"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 49,
+      "metadata": {
+        "gather": {
+          "logged": 1754298446472
+        }
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df.to_excel('finallll.xlsx', index = False)"
+      ],
+      "outputs": [],
+      "execution_count": 51,
+      "metadata": {
+        "gather": {
+          "logged": 1754298467227
         }
       }
     }
