@@ -94,7 +94,7 @@ Place your de-identified or mock student data in the data/ folder, following the
 
 Power BI Dashboards:
 
-Open Power BI Desktop and load .pbix files from dashboards/.
+Open Power BI Desktop and load .pbix files from Power BI/.
 
 Connect to processed data exports to visualize outcomes and risk profiles.
 
@@ -116,12 +116,12 @@ Data Science Teams: Reuse and adapt reproducible pipelines for institutional res
 
 ### Power BI Dashboards:
 
-Open Power BI Desktop and load .pbix files from dashboards/.
+Open Power BI Desktop and load .pbix files from Power BI/.
 
 Connect to processed data exports to visualize outcomes and risk profiles.
 
 ### Key Technologies
-Python (pandas, numpy, scikit-learn, xgboost, etc.)
+Python (pandas, numpy, scikit-learn, etc.)
 
 Azure ML for scalable cloud model serving
 
