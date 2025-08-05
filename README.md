@@ -114,7 +114,7 @@ Administrators: Monitor retention trends and forecast cohorts’ academic outcom
 
 Data Science Teams: Reuse and adapt reproducible pipelines for institutional research.
 
-Power BI Dashboards:
+### Power BI Dashboards:
 
 Open Power BI Desktop and load .pbix files from dashboards/.
 
@@ -128,13 +128,6 @@ Azure ML for scalable cloud model serving
 Power BI for business intelligence and dashboarding
 
 Jupyter for interactive data analysis
-
-### Use Cases
-Academic Advisors: Identify at-risk students early for targeted intervention.
-
-Administrators: Monitor retention trends and forecast cohorts’ academic outcomes.
-
-Data Science Teams: Reuse and adapt reproducible pipelines for institutional research.
 
 ### Contributing
 Contributions, suggestions, and improvements are welcome! Please open an issue or submit a pull request.
