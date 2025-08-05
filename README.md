@@ -133,7 +133,7 @@ Jupyter for interactive data analysis
 Contributions, suggestions, and improvements are welcome! Please open an issue or submit a pull request.
 
 ### License
-This project is for academic and demonstration purposes. For details, see the LICENSE file (if present).
+This project is for academic and demonstration purposes. For details, see the LICENSE file.
 
 ### Acknowledgements
 Developed at James Cook University, Australia.
